@@ -49,7 +49,7 @@ zplug load
 # environment
 #####################################################################
 
-export EDITOR=nvim
+export EDITOR=vim
 export LANG=en_US.UTF-8
 
 # Better umask
@@ -257,7 +257,7 @@ alias df="df -h"
 alias od='od -Ax -tx1z'
 alias hexdump='hexdump -C'
 
-alias vim='TERM=xterm-256color nvim'
+alias vim='TERM=xterm-256color vim'
 alias gonvim='~/Downloads/gonvim/gonvim.sh'
 alias termite='termite --exec=zsh'
 alias lock='i3exit lock'
