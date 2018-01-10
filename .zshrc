@@ -14,6 +14,11 @@ fi
 #####################################################################
 
 # Check if zplug is installed
+# Check if zplug is installed
+if [[ ! -d ~/.zplug ]]; then
+    git clone https://github.com/zplug/zplug ~/.zplug
+    source ~/.zplug/init.zsh && zplug update --self
+fi
 [[ -f ~/.zplug/init.zsh ]] || return
 
 unset ZPLUG_SHALLOW
